@@ -1,0 +1,11 @@
+[
+  {
+    "id": "raspberrypi",
+    "mac": [
+      {
+        "start": "B8:27:EB:00:00:00",
+        "end": "B8:27:EB:FF:FF:FF"
+      }
+    ]
+  }
+]

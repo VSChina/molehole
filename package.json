@@ -1,0 +1,29 @@
+{
+  "name": "molehole",
+  "version": "0.1.0",
+  "description": "",
+  "main": "out/index.js",
+  "scripts": {
+    "compile": "tsc -p ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sneezry/molehole.git"
+  },
+  "author": "Zhe Li",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Sneezry/molehole/issues"
+  },
+  "homepage": "https://github.com/Sneezry/molehole#readme",
+  "dependencies": {
+    "lodash.uniq": "^4.5.0",
+    "mdns-js": "^1.0.3",
+    "node-arp": "^1.0.6",
+    "node-wifiscanner": "^0.2.1"
+  },
+  "devDependencies": {
+    "@types/lodash.uniq": "^4.5.4",
+    "@types/node": "^10.12.18"
+  }
+}
