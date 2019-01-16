@@ -121,8 +121,6 @@ export class MoleHole {
     const devicesFromLan = await MoleHole.getDevicesFromLAN(timeout);
     const devicesFromAP = await MoleHole.getDevicesFromAP();
     const devices = uniq(([] as DeviceInfo[]).concat(devicesFromLan,devicesFromAP));
-    console.log(devices);
+    return devices;
   }
 }
-
-MoleHole.getDevices(1);

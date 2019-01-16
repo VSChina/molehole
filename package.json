@@ -4,6 +4,7 @@
   "description": "",
   "main": "out/index.js",
   "scripts": {
+    "test": "node test/index.js",
     "compile": "tsc -p ."
   },
   "repository": {
