@@ -1,7 +1,8 @@
 import * as wifi from 'node-wifiscanner';
 import * as  mdns from 'mdns-js';
 import * as arp from 'node-arp';
-import uniq = require('lodash.uniq');
+import uniqWith = require('lodash.uniqWith');
+import isEqual = require('lodash.isequal');
 
 const deviceMapping: DeviceMacMapping[] = require('../deviceMapping.json')
 
@@ -72,7 +73,7 @@ export class MoleHole {
           }
         }
 
-        return resolve(uniq(deviceList));
+        return resolve(uniqWith(deviceList, isEqual));
       });
     });
   }
@@ -88,7 +89,7 @@ export class MoleHole {
       const deviceList: DeviceInfo[] = [];
       setTimeout(() => {
         browser.stop();
-        return resolve(uniq(deviceList));
+        return resolve(uniqWith(deviceList, isEqual));
       }, timeout * 1000);
 
       browser.on('ready', () => {
@@ -120,7 +121,7 @@ export class MoleHole {
   static async getDevices(timeout = 10) {
     const devicesFromLan = await MoleHole.getDevicesFromLAN(timeout);
     const devicesFromAP = await MoleHole.getDevicesFromAP();
-    const devices = uniq(([] as DeviceInfo[]).concat(devicesFromLan,devicesFromAP));
+    const devices = uniqWith(([] as DeviceInfo[]).concat(devicesFromLan,devicesFromAP), isEqual);
     return devices;
   }
 }
