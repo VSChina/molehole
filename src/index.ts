@@ -1,7 +1,7 @@
 import * as wifi from 'node-wifiscanner';
 import * as  mdns from 'mdns-js';
 import * as arp from 'node-arp';
-import uniqWith = require('lodash.uniqWith');
+import uniqWith = require('lodash.uniqwith');
 import isEqual = require('lodash.isequal');
 
 const deviceMapping: DeviceMacMapping[] = require('../deviceMapping.json')
