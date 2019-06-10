@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Sneezry/molehole.git"
+    "url": "git+https://github.com/VSChina/molehole.git"
   },
   "author": "Zhe Li",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Sneezry/molehole/issues"
+    "url": "https://github.com/VSChina/molehole/issues"
   },
-  "homepage": "https://github.com/Sneezry/molehole#readme",
+  "homepage": "https://github.com/VSChina/molehole#readme",
   "dependencies": {
     "lodash.isequal": "^4.5.0",
     "lodash.uniqwith": "^4.5.0",
