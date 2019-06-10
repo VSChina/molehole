@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/VSChina/molehole.git"
   },
-  "author": "Zhe Li",
+  "author": "Microsoft",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/VSChina/molehole/issues"
